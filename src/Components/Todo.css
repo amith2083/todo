@@ -1,0 +1,142 @@
+body{
+    background-color: #FFF8E6;
+}
+
+.container {
+    background-color: #8D0B41;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 30px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: auto;
+    gap: 10px; /* Replaces margin-left on button for better spacing */
+}
+
+input {
+    padding: 10px;
+    width: 80%; /* Adjust width as needed */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #4CAF50; /* Focus effect for input */
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Lighter green on hover */
+}
+
+.list {
+    margin-top: 30px !important;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: -12px;
+    /* background-color:#D39D55 !important; */
+    background-color: #F5F5F5;
+    
+    color: black !important;
+    border: none !important;
+    list-style: none;
+    border-radius: 5px; /* Rounded corners for list items */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+
+   
+}
+
+li:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    color: black; /* Switches text color on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    button {
+        margin-left: 0; /* Removes unnecessary margin for stacked button */
+    }
+}
+
+.list-item-icons {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin: 0 10px; /* Add spacing between icons */
+    color: white; /* Default icon color */
+    cursor: pointer; /* Makes icons clickable */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover and click effects */
+}
+
+.list-item-icons:hover {
+    color: #4CAF50; /* Green color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Specific styles for individual icons */
+#complete {
+    color: #00FF7F; /* Default green for complete icon */
+}
+
+#edit {
+    color: #FFD700; /* Default yellow for edit icon */
+}
+
+#delete {
+    color: #FF4500; /* Default red for delete icon */
+}
+
+#complete:hover {
+    color: #32CD32; /* Lighter green on hover */
+}
+
+#edit:hover {
+    color: #FFA500; /* Lighter orange on hover */
+}
+
+#delete:hover {
+    color: #FF6347; /* Brighter red on hover */
+}
+#list-item{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
