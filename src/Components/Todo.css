@@ -6,10 +6,15 @@ body{
     background-color: #8D0B41;
     width: 40%;
     border-radius: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 30px;
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+      /* Centering Styles */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h2 {
